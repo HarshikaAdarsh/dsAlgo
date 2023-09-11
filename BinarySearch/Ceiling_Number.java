@@ -1,3 +1,5 @@
+//floor number : smallest element in array greater or equal to target
+
 package BinarySearch;
 
 public class Ceiling_Number {
