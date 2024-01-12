@@ -1,3 +1,5 @@
+// In java we can not overload operator but its exception in case of JAva
+
 package String;
 
 import java.util.ArrayList;
@@ -19,9 +21,9 @@ public class OperatorsInString {
 
         System.out.println("Kunal" + new Integer(50)); //output => kunal56 // again this will call toString
 
-        System.out.println(new Integer(56) + new ArrayList<>());// This will give array
+        // System.out.println(new Integer(56) + new ArrayList<>());// This will give error
         // because
-        // 1) In java "+" operator
+        // 1) In java "+" operator is only for primitves and string
         String ans = new Integer(56) + " " + new ArrayList<>();
         System.out.println(ans); // output => 56 [] //
 
