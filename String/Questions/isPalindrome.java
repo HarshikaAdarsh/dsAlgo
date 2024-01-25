@@ -1,6 +1,6 @@
-package String;
+package String.Questions;
 
-public class Questions {
+public class isPalindrome {
     public static void main(String[] args) {
 
      /* 1st method
@@ -24,11 +24,11 @@ public class Questions {
 
 
         // 2nd Method
-         String str = "abcdcba";
-        System.out.println(isPalindrome(str));
+        String str = "abcdcba";
+        System.out.println(isPalindromeMethod2(str));
 
     }
-    static boolean isPalindrome(String str){
+    static boolean isPalindromeMethod2(String str){
         if(str == null || str.length() == 0){
             return true;
         }
