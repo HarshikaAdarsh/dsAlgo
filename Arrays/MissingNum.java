@@ -7,23 +7,19 @@ public class MissingNum {
 
     public static void main(String[] args) {
 
-        int array[] = {3 , 2, 1, 5};
-
-        Arrays.sort(array);
-
+        int array[] = {3 , 2, 1, 5 , 4 ,6, 8};
+        int n= array.length+1;
         int missNum = 0 ;
+        int arraySum = 0;
+        int TotalSum = 0;
+        for(int i = 0 ; i < array.length  ; i++ ){
+            arraySum = arraySum + array[i];
 
-        for (int i = 1 ; i <= array.length ; i++) {
-
-            if (i == array[i-1] ) {
-                continue;
-            }
-            else if (i != array[i-1]){
-                missNum = i ;
-                System.out.println(missNum);
-                break ;
-            }
         }
+        TotalSum = (n* (n+1))/2;
+
+        missNum = TotalSum - arraySum ;
+        System.out.println(missNum); ;
     }
 
 }
