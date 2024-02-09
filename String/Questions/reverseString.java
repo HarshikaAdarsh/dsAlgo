@@ -4,11 +4,7 @@ public class reverseString {
     public static void main(String[] args) {
         String str = "AlexJohnson";
         System.out.println(ReverseString(str));
-lklkkl;kl;pkddiipoioi p[o[=ol';l kjghgjhb o[polnbuytt   opipoipoipiopdgfdxjfdlkjj;sd,';fl b rtpoerit -0 i   jkgerjgl  eorkgof\'as.d\ ls,dlfgdekgosrgc.fxovkfsdlkm
-    sldglkrjgjkfslsad
-    dsmfdnfksdfkdjf
-        fksdkljfksdjf
-    ']]
+
     }
     public static char[] ReverseString(String str){
         char[] ch = new char[str.length()];
@@ -66,4 +62,4 @@ for(int i=0;i<photo.length(); i++) {
 
 
 
-l
+
