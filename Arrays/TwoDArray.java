@@ -26,7 +26,7 @@ public class TwoDArray {
 
         // enhanced loop
         for(int[] a : arr){
-            System.out.println(Arrays.toString(a));
+            System.out.println(a);
         }
     }
 }
