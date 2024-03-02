@@ -23,5 +23,10 @@ public class TwoDArray {
             }
            System.out.println();
         }
+
+        // enhanced loop
+        for(int[] a : arr){
+            System.out.println(Arrays.toString(a));
+        }
     }
 }
