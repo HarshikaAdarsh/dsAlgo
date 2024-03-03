@@ -1,4 +1,4 @@
-package BinarySearch;
+package Binary_Linear_Search;
    public class BinarySearch {
         public static void main(String[] args) {
             int[] arr={2,3,4,5,8,9,12,34,56};

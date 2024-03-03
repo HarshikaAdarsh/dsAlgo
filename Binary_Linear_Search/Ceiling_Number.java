@@ -1,16 +1,19 @@
-//floor number : greatest element in array smaller or equal to target
-package BinarySearch;
+//floor number : smallest element in array greater or equal to target
 
-public class Floor_Number {
+package Binary_Linear_Search;
+
+public class Ceiling_Number {
     public static void main(String[] args) {
         int[] arr={2,3,5,9,14,16,18};
         int target = 15;
-        int ans = floor(arr,target);
+        int ans = ceiling(arr,target);
         System.out.println(ans);
 
     }
-    public static int floor(int[] arr , int target){
-
+    public static int ceiling(int[] arr , int target){
+        if (target > arr[arr.length - 1]) {
+          return 1;
+        }
         int start = 0 ;
         int end= arr.length-1;
 
@@ -27,8 +30,9 @@ public class Floor_Number {
             else{
                 return mid ;
             }
-        }
-        return end;
+          }
+        return start;
     }
+
 
 }

@@ -1,7 +1,7 @@
 
 //34. Find First and Last Position of Element in Sorted Array
 
-package BinarySearch;
+package Binary_Linear_Search;
 
 import java.util.Arrays;
 

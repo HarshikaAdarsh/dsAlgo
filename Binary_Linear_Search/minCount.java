@@ -1,4 +1,4 @@
-package BinarySearch;
+package Binary_Linear_Search;
 
 public class minCount {
     public static void main(String[] args) {
