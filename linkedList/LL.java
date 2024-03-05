@@ -46,6 +46,9 @@ public class LL {
 
         }
         Node node = new Node(val, temp.next);
+//        Node Moretemp = temp.next;
+//        temp.next = node ;
+//        node = Moretemp ;
         temp.next = node;
         size ++;
 
