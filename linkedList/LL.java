@@ -62,6 +62,9 @@ public class LL {
         size-- ;
         return val;
     }
+    public int deleteLast(){
+        
+    }
 
     public void display(){
         Node temp = head ;
