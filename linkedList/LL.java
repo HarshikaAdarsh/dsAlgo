@@ -80,9 +80,34 @@ public class LL {
       Node secondLast = get(size-2);
       int val = tail.value;
       tail = secondLast;
+      tail.next = null;
       return val;
      }
 
+     public int delete(int index){
+        if(index == 0 ){
+            deleteFirst();
+        }
+        if(index == size -1 ){
+            deleteLast();
+        }
+        Node prev = get(index-1);
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+        return val;
+     }
+
+     // Search
+    public Node find(int value){
+        Node node = head;
+        while(node != null){
+            if( node.value == value){
+                return node ;
+            }
+            node = node.next ;
+        }
+        return null;
+    }
     public void display(){
         Node temp = head ;
          while(temp != null){
@@ -100,7 +125,6 @@ public class LL {
         public Node(int value)
         {
             this.value = value ;
-
         }
         public Node(int value, Node next){
             this.value = value ;

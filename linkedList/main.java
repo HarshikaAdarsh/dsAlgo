@@ -18,5 +18,10 @@ public class main {
         list.display();
         System.out.println(list.deleteFirst());
         list.display();
+        System.out.println(list.deleteLast());
+        list.display();
+        System.out.println(list.delete(2));
+        list.display();
+        System.out.println(list.find(3));
     }
 }
