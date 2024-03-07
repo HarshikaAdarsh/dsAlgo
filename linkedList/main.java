@@ -32,7 +32,7 @@ public class main {
         list.insertFirst(3);
         list.insertFirst(4);
         list.insertLast(99);
-        list.insert(3,99);
+        list.insert(3,70);
         list.display();
 
 
