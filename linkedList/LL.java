@@ -2,13 +2,33 @@ package linkedList;
 
 public class LL {
 
-    private Node head;
+    public Node head;
     private Node tail;
     private int size;
     public LL(){
         this.size = 0;
     }
     // Insertion
+
+    public int countSize(Node head){
+        if (head == null){
+            return 0;
+        }
+
+        return 1 + countSize(head.next);
+    }
+
+    public  Boolean Search(int value , Node head){
+
+        if(head == null){
+            return false;
+        }
+        if(head.value ==  value ){
+            return true;
+        }
+
+        return  Search(value,head.next);
+    }
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
