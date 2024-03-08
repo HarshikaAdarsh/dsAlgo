@@ -23,19 +23,32 @@ public class main {
 //        System.out.println(list.find(3));
 
         // Doubly Linked List
+//
+//        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+//
+//        DLL list = new DLL();
+//        list.insertFirst(1);
+//        list.insertFirst(2);
+//        list.insertFirst(3);
+//        list.insertFirst(4);
+//        list.insertLast(99);
+//        list.insert(3,70);
+//        list.display();
+
+
+        // Circular linked list
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 
-        DLL list = new DLL();
-        list.insertFirst(1);
-        list.insertFirst(2);
-        list.insertFirst(3);
-        list.insertFirst(4);
-        list.insertLast(99);
-        list.insert(3,70);
+         CLL list = new CLL();
+         list.insert(7);
+        list.insert(5);
+        list.insert(9);
+        list.insert(3);
+        list.insert(6);
+        list.insert(19);
         list.display();
-
-
-
+        list.delete(9);
+        list.display();
     }
 }
