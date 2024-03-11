@@ -29,6 +29,9 @@ public class LL {
 
         return  Search(value,head.next);
     }
+    public void findSizeRecurrsion(Node Head){
+        
+    }
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
