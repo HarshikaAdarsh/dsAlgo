@@ -20,17 +20,17 @@ public class LL {
 
     public  Boolean Search(int value , Node head){
 
-        if(head == null){
-            return false;
-        }
-        if(head.value ==  value ){
-            return true;
-        }
+            if(head == null){
+                return false;
+            }
+            if(head.value ==  value ){
+                return true;
+            }
 
-        return  Search(value,head.next);
+            return  Search(value,head.next);
     }
     public void findSizeRecurrsion(Node Head){
-        
+
     }
     public void insertFirst(int val){
         Node node = new Node(val);
