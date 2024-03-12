@@ -29,9 +29,40 @@ public class LL {
 
             return  Search(value,head.next);
     }
-    public void findSizeRecurrsion(Node Head){
 
+    // Question1) find size of linked list using recurrsion
+    public int findSizeRecurrsion(Node head){
+        size = 0 ;
+        if(head ==null){
+            return 0;
+        }
+        return size = 1 + findSizeRecurrsion(head.next);
     }
+
+    // Question2) find size of linked list without using recurrsion
+    public int findSizewithoutRecurrsion(Node head){
+        size =0;
+        Node temp = head;
+        while (temp != null){
+            size = size+1;
+            temp = temp.next;
+        }
+        return size;
+    }
+
+    // Question3)  a function to get Nth node in a Linked List
+     public int GetNnode(Node head, int index){
+        Node temp = head;
+        int value = 0;
+         while(temp != index){
+            if(temp == N){
+                value =  temp.value;
+            }
+            temp = temp.next;
+        }
+        return value;
+     }
+
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;
