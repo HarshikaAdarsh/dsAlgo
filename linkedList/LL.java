@@ -51,17 +51,34 @@ public class LL {
     }
 
     // Question3)  a function to get Nth node in a Linked List
-     public int GetNnode(Node head, int index){
-        Node temp = head;
-        int value = 0;
-         while(temp != index){
-            if(temp == N){
-                value =  temp.value;
+     public int GetNnode(int N){
+        Node node = head ;
+        int value = 0 ;
+        for(int i = 1 ; i <= N ; i++){
+            if(i == N){
+                value = node.value;
             }
-            temp = temp.next;
+            node = node.next;
         }
-        return value;
+        return value ;
      }
+
+     // Question4) Nth node from the end of a Linked List
+
+    public int GetLastNnode (int N){
+        Node node = head;
+        int Nthindex = 0;
+        while(node != null){
+            size = size+1;
+            node = node.next;
+        }
+        Nthindex = size - N ;
+
+        for(int i =0 ; i < Nthindex ; i++){
+            if (i == Nthindex){
+                
+            }
+    }
 
     public void insertFirst(int val){
         Node node = new Node(val);

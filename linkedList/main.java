@@ -18,7 +18,7 @@ public class main {
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
 
-        System.out.println(list.GetNnode(list.head, list.));
+        System.out.println(list.GetNnode( 3));
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
 
