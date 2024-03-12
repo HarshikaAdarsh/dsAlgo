@@ -26,14 +26,30 @@ public class CLL {
     }
 
     // question8)  Count nodes in Circular linked list
-    public int NumberOfNodes (Node head, Node tail){
+    public int NumberOfNodes (){
         Node node = head;
         int count = 0 ;
-        while(node != tail.next){
-            
+        while(node.next != head){
+            count = count+ 1;
+            node = node.next;
 
         }
+        return count+1 ;
+    }
 
+    // question9) Exchange first and last nodes in Circular Linked List
+
+    public void ExchangeNodes(Node head){
+        Node node = head;
+        int temp;
+        while(node.next != head){
+            if(node.next == head){
+                temp = node.val;
+                node.val = head.val;
+                head.val = temp;
+            }
+            node = node.next;
+        }
     }
 
     public void insert(int val){
