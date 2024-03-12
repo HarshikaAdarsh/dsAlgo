@@ -66,20 +66,58 @@ public class LL {
      // Question4) Nth node from the end of a Linked List
 
     public int GetLastNnode (int N){
+        size = 0 ;
+        Node temp = head;
         Node node = head;
         int Nthindex = 0;
-        while(node != null){
+        int value = 0;
+        while(temp != null){
             size = size+1;
+            temp = temp.next;
+        }
+
+        Nthindex = size - N ;
+        for(int i =0 ; i < Nthindex ; i++){
+            if(i == Nthindex){
+                value = node.value;
+            }
             node = node.next;
         }
-        Nthindex = size - N ;
-
-        for(int i =0 ; i < Nthindex ; i++){
-            if (i == Nthindex){
-                
-            }
+        return value;
     }
 
+    // Question5) Print the middle of a given linked list
+    public int MiddleNode (Node head){
+        Node fast = head;
+        Node slow = head;
+            do{
+                fast = fast.next.next;
+                slow = slow.next;
+            }
+            while (fast != null && fast.next != null);
+        return slow.value;
+    }
+
+   // Question6) a function that counts the number of times a given int occurs in a Linked List
+    public int CountInt (Node head, int val){
+        int count = 0;
+        Node node = head ;
+        while (node != null){
+
+            if(node.value == val){
+                count = count+1;
+
+            }
+            node = node.next;
+        }
+        return count ;
+    }
+
+   // Question 7) Check if a linked list is Circular Linked List
+   public Boolean Ifcircular (Node head, Node tail){
+        Node node = head;
+        
+   }
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;

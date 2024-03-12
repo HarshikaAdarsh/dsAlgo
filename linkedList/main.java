@@ -8,17 +8,30 @@ public class main {
         LL list = new LL();
         list.insertFirst(1);
         list.insertFirst(20);
-        list.insertFirst(90);
-        list.insertFirst(4);
+        list.insertFirst(3);
+        list.insertFirst(3);
         list.insertFirst(17);
+        list.insertFirst(3);
+        list.insertFirst(3);
+        list.insertFirst(3);
+        list.insertFirst(40);
         list.insertLast(77);
         list.insert(100, 4);
         list.display();
         System.out.println();
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println(list.CountInt(list.head, 3));
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println();
+
+        System.out.println(list.MiddleNode(list.head));
+
+        System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println();
 
         System.out.println(list.GetNnode( 3));
+ //      System.out.println(list.GetLastNnode(4));
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
 
