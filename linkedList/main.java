@@ -6,7 +6,7 @@ public class main {
         // LinkedList<Integer> list = new LinkedList<>();
         // list.add(34);
         LL list = new LL();
-        list.insertFirst(1);
+        list.insertFirst(77);
         list.insertFirst(20);
         list.insertFirst(3);
         list.insertFirst(3);
@@ -20,6 +20,7 @@ public class main {
         list.display();
         System.out.println();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
+        System.out.println(list.Ifcircular(list.head, list.tail));
         System.out.println(list.CountInt(list.head, 3));
 
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
@@ -71,7 +72,7 @@ public class main {
 //        list.insertLast(99);
 //        list.insert(3,70);
 //        list.display();
-
+//  }
 
         // Circular linked list
 
@@ -87,6 +88,7 @@ public class main {
 //        list.display();
 //        list.delete(9);
 //        list.display();
+//        System.out.println(list.Ifcircular(list.head , list.tail));
 //    }
 
     }

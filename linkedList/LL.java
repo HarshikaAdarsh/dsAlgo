@@ -3,7 +3,7 @@ package linkedList;
 public class LL {
 
     public Node head;
-    private Node tail;
+    public  Node tail;
     private int size;
     public LL(){
         this.size = 0;
@@ -112,12 +112,22 @@ public class LL {
         }
         return count ;
     }
-
-   // Question 7) Check if a linked list is Circular Linked List
-   public Boolean Ifcircular (Node head, Node tail){
+    // Question 7) Check if a linked list is Circular Linked List
+    public Boolean Ifcircular (Node head, Node tail){
         Node node = head;
-        
-   }
+        while(node != null){
+            if( tail.next == head ){
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+        return false;
+    }
+
+
     public void insertFirst(int val){
         Node node = new Node(val);
         node.next = head;

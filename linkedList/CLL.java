@@ -2,12 +2,38 @@ package linkedList;
 
 public class CLL {
 
-    private Node head;
-    private Node tail;
+    public Node head;
+    public Node tail;
 
     public CLL(){
         this.head = null;
         this.tail = null;
+    }
+
+    // Question 7) Check if a linked list is Circular Linked List
+    public Boolean Ifcircular (Node head, Node tail){
+        Node node = head;
+        while(node != null){
+            if( tail.next == head ){
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+        return false;
+    }
+
+    // question8)  Count nodes in Circular linked list
+    public int NumberOfNodes (Node head, Node tail){
+        Node node = head;
+        int count = 0 ;
+        while(node != tail.next){
+            
+
+        }
+
     }
 
     public void insert(int val){
