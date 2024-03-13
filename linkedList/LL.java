@@ -138,6 +138,17 @@ public class LL {
 
     }
 
+    //Question9)
+      public void ReversePrint(Node head){
+
+          if (head == null)
+              return;
+
+          ReversePrint(head.next);
+
+          System.out.print(head.value + " -> ");
+      }
+
 
     public void insertFirst(int val){
         Node node = new Node(val);

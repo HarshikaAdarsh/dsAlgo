@@ -20,8 +20,10 @@ public class main {
         list.display();
         System.out.println();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
-        list.ConversionSinglyToCircular();
-        list.display();
+
+        list.ReversePrint(list.head);
+      //  list.ConversionSinglyToCircular();
+      //  list.display();
 
         System.out.println();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");
