@@ -128,9 +128,13 @@ public class LL {
     }
 
     // Question8)  Convert singly linked list into circular linked list
-    public void ConversionSinglyToCircular(){
-
-        tail.next = head;
+    public Node ConversionSinglyToCircular(){
+         Node start = head;
+         while(start != null){
+             head = head.next ;
+         }
+         head.next = start;
+        return start;
 
     }
 
