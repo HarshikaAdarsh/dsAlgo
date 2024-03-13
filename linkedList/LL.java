@@ -127,6 +127,13 @@ public class LL {
         return false;
     }
 
+    // Question8)  Convert singly linked list into circular linked list
+    public void ConversionSinglyToCircular(){
+
+        tail.next = head;
+
+    }
+
 
     public void insertFirst(int val){
         Node node = new Node(val);
