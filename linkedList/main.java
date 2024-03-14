@@ -24,6 +24,7 @@ public class main {
         list.ReversePrint(list.head);
       //  list.ConversionSinglyToCircular();
       //  list.display();
+        list.display();
 
         System.out.println();
         System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++");

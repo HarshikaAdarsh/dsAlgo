@@ -4,7 +4,7 @@ public class DLL {
     Node head ;
 
  //Question10)
-    
+
     public void insertFirst(int val){
         Node node = new Node (val);
          node.next = head;
