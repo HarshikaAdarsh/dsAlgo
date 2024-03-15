@@ -2,6 +2,11 @@ package linkedList;
 
 public class LL {
 
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
     public Node head;
     public  Node tail;
     private int size;
@@ -261,6 +266,11 @@ public class LL {
     }
 
     private class Node{
+
+        @Override
+        public String toString() {
+            return Integer.toString(this.value);
+        }
 
         private int value;
         private Node next;

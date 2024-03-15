@@ -1,7 +1,7 @@
 package Tree;
 import java.util.Scanner;
  class Binary_tree {
-    public BinaryTree(){
+    public Binary_tree(){
 
     }
 
@@ -44,13 +44,13 @@ import java.util.Scanner;
     public void display(){
         display(root, " ");
     }
-    private display(Node node, String indent){
-        if(node!=null){
+    private void display(Node node, String indent){
+        if(node ==null){
             return;
         }
         System.out.println(indent + node.value);
         display(node.left, indent + "\t" );
-          display(node.right + indent + "\t");
+          display(node.right , indent + "\t");
     }
 
 
