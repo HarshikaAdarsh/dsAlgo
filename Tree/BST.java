@@ -34,7 +34,7 @@ public class BST {
     }
 
     public void insert(int value) { // constructor
-
+     root = insert( value, root);
     }
 
     public Node insert(int value, Node node) {
@@ -52,9 +52,35 @@ public class BST {
         return node ;
     }
 
+    public void populate(int[] nums){
+        for (int i = 0; i < nums.length; i++) {
+           this.insert(nums[i]);
+        }
+    }
+    public void populateSorted(int[] nums){
+      populateSorted(nums, 0 ,nums.length);
+    }
+    private void populateSorted(int[] nums, int start, int end){
+        if(start >= end){
+            return;
+        }
+        int mid = (start + end)/2;
+        this.insert(nums[mid]);
+        populateSorted( nums, start, mid);
+        populateSorted( nums, mid+1 , end);
+    }
+        public Boolean balanced(){
+            return balanced (root);
+        }
+        private boolean balanced(Node node) {
+            if (node == null) {
+                return true;
+            }
+            return Math.abs(height(node.left) - height(node.right)) <= 1 && balanced(node.left) && balanced(node.right);
+        }
 
     public void display(){
-        display(root,"Root Node : ");
+        display(this.root,"Root Node : ");
     }
     private void display(Node node, String details){
         if(node == null){
