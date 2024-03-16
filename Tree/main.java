@@ -7,6 +7,6 @@ public class main {
         Scanner scanner = new Scanner(System.in);
         Binary_tree tree = new Binary_tree();
         tree.populate(scanner);
-        tree.display();
+        tree.prettyDisplay();
     }
 }
