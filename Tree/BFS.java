@@ -1,7 +1,7 @@
 package Tree;
 
 import java.util.ArrayList;
-
+/*
 public class BFS {
     public static void main(String[] args) {
         System.out.println();
@@ -19,9 +19,19 @@ public class BFS {
             int levelSize = queue.size();
             for(int i =0 ; i< levelsize; i++){
                 TreeNode currentNode = queue.poll();
+                currentLevel.add(currentNode.val);
+                if(currentNode.left !=null){
+                    queue.offer(currentNode.left);
+                }
+                if(currentNode.right !=null) {
+                    queue.offer(currentNode.right);
+                }
+
             }
+            result.add(currentLevel);
         }
 
         return result;
     }
 }
+*/
