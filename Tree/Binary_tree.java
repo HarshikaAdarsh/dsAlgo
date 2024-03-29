@@ -104,6 +104,28 @@ import java.util.Scanner;
          preOrder(node.right);
          System.out.println(node.value + " ");
      }
-     
+     // Question no. 9
+     // Find Children of a Node
+     public int findChildren(){
+       return  findChildren(root, 5);
+     }
+     private int findChildren(Node node , int X){
+        int count = 0;
+        if(node == null){
+            return 0 ;
+        }
+        if(node.value == X ){
+            if(node.left != null){
+                count = count + 1 ;
+            }
+            if(node.right != null){
+                count = count + 1;
+            }
+            else{
+                return count;
+            }
+        }
+        return count;
+     }
 
 }
