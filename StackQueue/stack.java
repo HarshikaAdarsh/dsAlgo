@@ -7,6 +7,11 @@ public class stack {
         stack.push(45);
         stack.push(9);
         stack.push(18);
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
+        System.out.println(stack.pop());
 
     }
 }
