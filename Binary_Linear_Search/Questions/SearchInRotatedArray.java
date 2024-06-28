@@ -13,24 +13,29 @@ public class SearchInRotatedArray {
     static int Search(int[] arr, int N){
         // find min
         int start = 0;
-        int end = N ;
+        int end = N  ;
 
         while (start <= end){
-            int mid = start + (end - start) /2 ;
-            int prev = (mid + N - 1 ) % N;
+            if (arr[start] <= arr[end]) {
+                return start;
+            }
+            int mid = start + (end - start) / 2;
+            int prev = (mid + N - 1) % N;
             int next = (mid + 1) % N;
 
-            if(arr[mid] <= arr[prev] && arr[mid] <= arr[next]){
+            if (arr[mid] <= arr[prev] && arr[mid] <= arr[next]){
                 return mid;
             }
-            //sorted or not
-
-            else if(arr[start] <= arr[mid] ){
+            // If the left part is sorted
+            else if (arr[start] <= arr[mid]){
                 start = mid + 1;
             }
-            else if( arr[end] <= arr[mid]){
-                 end = mid - 1 ;
-             }
+            // If the right part is sorted
+            else if (arr[end] >= arr[mid]){
+                end = mid - 1;
+            }
+
+
 
         }
 
