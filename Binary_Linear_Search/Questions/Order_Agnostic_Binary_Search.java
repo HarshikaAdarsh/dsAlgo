@@ -1,4 +1,4 @@
-package Binary_Linear_Search;
+package Binary_Linear_Search.Questions;
 
 
     public class Order_Agnostic_Binary_Search {
