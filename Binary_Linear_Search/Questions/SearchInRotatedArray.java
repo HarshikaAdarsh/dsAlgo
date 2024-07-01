@@ -23,11 +23,11 @@ public class SearchInRotatedArray {
             int prev = (mid + N - 1) % N;
             int next = (mid + 1) % N;
 
-            if (arr[mid] <= arr[prev] && arr[mid] <= arr[next]){
-                return mid;
-            }
+//            if (arr[mid] <= arr[prev] && arr[mid] <= arr[next]){
+//                return mid;
+//            }
             // If the left part is sorted
-            else if (arr[start] <= arr[mid]){
+              if (arr[start] <= arr[mid]){
                 start = mid + 1;
             }
             // If the right part is sorted
