@@ -10,7 +10,7 @@ public class NearestGreatest {
             for(int j = i+1 ; j < arr.length ; j++){
                 if(arr[i] < arr[j]){
                     Greatest[i] = arr[j];
-                  
+
                 }
                 else if( arr[j] <= arr[i] && j >= arr.length ){
                     Greatest[i] = -1;
