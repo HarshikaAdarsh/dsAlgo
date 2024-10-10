@@ -32,5 +32,33 @@ public class CustomQueue {
         return true;
     }
 
-    // removal
+    // remove element in queue
+
+    public int remove() throws Exception {
+        if(isEmpty()){
+            throw new Exception("Queue is Empty");
+        }
+        int removed = data[0];
+        // shift element to left by one
+        for(int i = 1 ; i < end ; i++){
+            data[i-1] = data[i];
+        }
+        end--;
+        return removed;
+    }
+    // display the item at front
+    public int front() throws Exception{
+        if(isEmpty()){
+            throw new Exception("Queue is Empty");
+        }
+        return data[0];
+    }
+
+    // display the item
+    public void display(){
+        for(int i = 0 ; i < end ; i++){
+            System.out.print(data[i] + " <-");
+        }
+        System.out.println("END");
+    }
 }
