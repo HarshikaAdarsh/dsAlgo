@@ -26,7 +26,7 @@ public class dynamicQueue extends  circularQueue{
             }
             front = 0;
             end = data.length;
-            data = temp;                         
+            data = temp;
         }
 
         // at this point we know that array is not full so we can insert item norally
