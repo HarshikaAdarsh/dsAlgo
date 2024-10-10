@@ -28,9 +28,9 @@ public class CustomQueue {
         // it is similar to
         // data[end] = item;
         // end++;
-
-        return true;
+         return true;
     }
+
 
     // remove element in queue
 
